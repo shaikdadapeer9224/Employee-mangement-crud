@@ -2,9 +2,9 @@ server:
   port: 8080
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/practice_db
+    url: jdbc:postgresql://sdp-1.cwbfz5zcys44.us-east-1.rds.amazonaws.com:5432/sdp-1
     username: postgres
-    password: 1234
+    password: farakdadapeer
   jpa:
     hibernate:
       ddl-auto: update
