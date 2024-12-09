@@ -2,7 +2,7 @@ server:
   port: 8080
 spring:
   datasource:
-    url: jdbc:postgresql://sdp-1.cwbfz5zcys44.us-east-1.rds.amazonaws.com:5432/sdp-1
+    url: jdbc:postgresql://localhost:5432/empmanagement
     username: postgres
     password: farakdadapeer
   jpa:
