@@ -4,6 +4,8 @@ import com.demo.in.employeemanagementsystem.model.Employee;
 
 import java.util.List;
 
+import javax.persistence.criteria.CriteriaBuilder.In;
+
 public interface EmployeeService {
 
     Employee saveEmployee(Employee employee);
@@ -15,4 +17,6 @@ public interface EmployeeService {
     Employee updateOrSaveEmployee(Integer eid,Employee employee);
 
     void deleteEmployee(Integer eid);
+
+    Employee getEmployeeByEId(Integer eid);
 }
