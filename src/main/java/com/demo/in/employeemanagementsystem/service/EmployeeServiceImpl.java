@@ -57,4 +57,10 @@ public class EmployeeServiceImpl implements  EmployeeService{
         emp.setDelete_status(true);
         employeeRepository.save(emp);
     }
+
+    @Override
+    public Employee getEmployeeByEId(Integer eid) {
+        return employeeRepository.findById(eid).orElseThrow(()->new EmployeeNotFoundException("Employee With ID :"+eid+" Not Exist!"));
+    }
+    
 }
